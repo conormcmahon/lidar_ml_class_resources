@@ -57,7 +57,7 @@ renameImages <- function(input_image_filepath)
 }
 
 chm_tile_list_final <- lapply(chm_tile_list, renameImages)
-dem_tile_list_final <- lapply(chm_tile_list, renameImages)
+dem_tile_list_final <- lapply(dem_tile_list, renameImages)
 
 # Count up the total number of valid pixels to get an area estimate for the survey
 valid_pixel_count <- lapply(chm_tile_list_final,
